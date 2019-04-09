@@ -1,0 +1,35 @@
+import java.util.*;
+
+// Warning: Printing unwanted or ill-formatted data to output will cause the test cases to fail
+
+class TestClass {
+    public static void main(String args[] ) throws Exception {
+
+        //Scanner
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int input,no_of_special_rods,rod,i;
+        for(i=0;i<n;i++)
+       {
+           input=0;
+           no_of_special_rods=0;
+           input=s.nextInt();
+           rod=3;
+           while(rod<=input)
+           
+           {
+              no_of_special_rods++;
+              rod=rod*2+1;
+               
+           }
+          
+           System.out.println(no_of_special_rods);
+       }
+          
+
+        
+
+        // Write your code here
+
+    }
+}
